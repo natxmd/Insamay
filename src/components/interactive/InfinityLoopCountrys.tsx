@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import "./loop.css"
+import CardCountry from '../cards/CardCountry';
 
 interface InfiniteLooperProps {
     speed: number;
@@ -72,11 +73,57 @@ const InfiniteLooper: React.FC<InfiniteLooperProps> = ({ speed, direction, child
 const InfinityLoopCountrys: React.FC = () => (
     <div className="app pyContainer">
         <InfiniteLooper speed={8} direction="left">
-            <img
-                src='/img/text-loop.png'
-                alt='Loop Text'
-                className='ml-[18px] sm:ml-[26.5px]
-                h-[42px] sm:h-[101px]'
+            <CardCountry
+                name='Estados Unidos'
+                img='/img/countrys/eeuu.png'
+            />
+            <CardCountry
+                name='México'
+                img='/img/countrys/mexico.png'
+            />
+            <CardCountry
+                name='Colombia'
+                img='/img/countrys/colombia.png'
+            />
+            <CardCountry
+                name='Perú'
+                img='/img/countrys/peru.png'
+            />
+            <CardCountry
+                name='Bolivia'
+                img='/img/countrys/bolivia.png'
+            />
+            <CardCountry
+                name='Chile'
+                img='/img/countrys/chile.png'
+            />
+            <CardCountry
+                name='Argentina'
+                img='/img/countrys/argentina.png'
+            />
+            <CardCountry
+                name='Paraguay'
+                img='/img/countrys/paraguay.png'
+            />
+            <CardCountry
+                name='Uruguay'
+                img='/img/countrys/uruguay.png'
+            />
+            <CardCountry
+                name='Brasil'
+                img='/img/countrys/brasil.png'
+            />
+            <CardCountry
+                name='Alemania'
+                img='/img/countrys/alemania.png'
+            />
+            <CardCountry
+                name='Italia'
+                img='/img/countrys/italia.png'
+            />
+            <CardCountry
+                name='Polonia'
+                img='/img/countrys/polonia.png'
             />
         </InfiniteLooper>
     </div>

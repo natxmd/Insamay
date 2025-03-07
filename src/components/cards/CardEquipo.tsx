@@ -26,8 +26,9 @@ const CardEquipo = ({
 
 ) => {
     return (
-        <div 
-            className="text-center
+        <div
+            style={{ boxShadow: '0px 3.65px 5.48px 0px rgba(77, 48, 13, 0.06)' }}
+            className="text-center rounded-[15px]
             px-[8px] pt-[12px] pb-[18px] 
             sm:p-[8px] sm:pb-[30px]">
             <img
@@ -48,7 +49,7 @@ const CardEquipo = ({
                 pt-[24px] pb-[32px] sm:py-[30px]">
                 {description}
             </p>
-            <div className="flex gap-[16px] justify-items-center items-center">
+            <div className="flex gap-[16px] justify-center items-center">
                 <Ig link={linkIG} />
                 {linkFB && <Fb link={linkFB} />}
                 {linkLT && <Lt link={linkLT} />}
